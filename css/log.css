@@ -1,0 +1,299 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Sans-serif, Arial, serif;
+    background-color: #626F82;
+}
+/* header */
+
+.header a{
+    text-decoration: none;
+}
+
+.header .nextLog{
+    background-color: #434B56;
+    display: block;
+    margin: 15px;
+    text-align: center;
+    padding: 1.5em ;
+    outline: none;
+    color: #f1f1f1;
+    border-radius: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    float: right;
+    font-weight: bold;
+
+}
+.header .nextLog:hover{
+    background-color: lawngreen;
+    color: #434B56;
+    width: 120px;
+
+
+}
+
+.header .home{
+    background-color: #434B56;
+    display: block;
+    margin: 15px;
+    text-align: center;
+    padding: 15px 0 ;
+    outline: none;
+    color: #f1f1f1;
+    border-radius: 15px;
+    transition: 0.2s;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+}
+.header .home:hover{
+    background-color: red;
+    color: whitesmoke;
+    width: 120px;
+
+}
+
+
+/* login box*/
+.logBox h1 a{
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+.box{
+    width: 500px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #434B56;
+    text-align: center;
+    border-radius: 15px;
+}
+.zav{
+    color: deepskyblue;
+}
+.box h1{
+    color: #f1f1f1;
+    font-weight: 600;
+    font-size: 40px;
+
+}
+.box h2{
+    color: #f1f1f1;
+    font-weight: 300;
+}
+
+.input{
+    background-color: #626F82;
+    display: block;
+    margin: 15px auto;
+    text-align: center;
+    border: 2px solid deepskyblue;
+    padding: 14px 10px ;
+    width: 40%;
+    outline: none;
+    color: #f1f1f1;
+    border-radius: 24px;
+    transition: 0.2s;
+}
+.input:focus{
+    width: 50%;
+    border-color: lawngreen;
+}
+
+.input::placeholder {
+    color: #f1f1f1;
+
+}
+/*** tooltipy ***/
+.usernameTip .tip{
+    background-color: #f5f5f5;
+    color: black;
+    width: 240px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1; /* davam pred layer */
+    left: 74%;
+    bottom: 320px;
+    visibility: hidden;
+
+}
+
+.usernameTip:hover .tip{
+    visibility: visible;
+
+}
+
+.emailTip .tip{
+    background-color: #f5f5f5;
+    color: black;
+    width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1; /* davam pred layer */
+    left: 74%;
+    bottom: 257px;
+    visibility: hidden;
+
+}
+
+.emailTip:hover .tip{
+    visibility: visible;
+
+}
+
+.passwordTip .tip{
+    background-color: #f5f5f5;
+    color: black;
+    width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1; /* davam pred layer */
+    left: 74%;
+    bottom: 160px;
+    visibility: hidden;
+
+}
+
+.passwordTip:hover .tip{
+    visibility: visible;
+
+}
+
+.confirmTip .tip{
+    background-color: #f5f5f5;
+    color: black;
+    width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1; /* davam pred layer */
+    left: 75%;
+    bottom: 130px;
+    visibility: hidden;
+}
+
+.confirmTip:hover .tip{
+    visibility: visible;
+
+}
+
+.userTip .tip{
+    background-color: #f5f5f5;
+    color: black;
+    width: 240px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1; /* davam pred layer */
+    left: 75%;
+    bottom: 200px;
+    visibility: hidden;
+}
+
+.userTip:hover .tip{
+    visibility: visible;
+
+}
+.pswTip .tip{
+    background-color: #f5f5f5;
+    color: black;
+    width: 200px;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1; /* davam pred layer */
+    left: 75%;
+    bottom: 135px;
+    visibility: hidden;
+}
+
+.pswTip:hover .tip{
+    visibility: visible;
+
+}
+
+/*** submit button ***/
+.box .submit{
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid lawngreen;
+    padding: 14px 40px;
+    outline: none;
+    color: #f1f1f1;
+    border-radius: 24px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.box .submit:hover{
+    background-color: lawngreen;
+    color: #434B56;
+}
+.box .submit:focus{
+    background-color: lawngreen;
+    color: #434B56;
+}
+
+
+.nightBody{
+    background-color: #081b26;
+    color: #f1f1f1;
+}
+.nightBox{
+    background-color: #092c3e;
+}
+
+.error {
+    border-color: red;
+    width: 50%;
+}
+
+.errorTip{
+    color: red;
+}
+
+.thx{
+    color: #f1f1f1;
+}
+
+@media print {
+    .logBox .box h1 a{
+        color: black;
+    }
+    .logBox .zav{
+        color: black;
+    }
+    .logBox .box{
+        border: 2px solid black;
+    }
+    .logBox .box h2{
+        color: black;
+    }
+    .logBox input{
+        border: 1px solid black;
+    }
+    .logBox .submit{
+        border: 1px solid black;
+    }
+    .header{
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,518 @@
+
+
+/* hlavicka */
+
+.header{
+    text-align: left;
+    color: #ECECEA;
+    background-color: #626F82;
+    margin-bottom: auto;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    transition: all 0.5s;
+}
+
+.header h1{
+    margin: 0;
+    padding: 10px;
+    float: left;
+    left: 50px;
+
+}
+
+.header h1 a{
+    color: #f1f1f1;
+    text-decoration: none;
+    cursor: pointer;
+    left: 50px;
+}
+
+
+ .zav{
+    color: deepskyblue;
+}
+
+    /* login btn */
+.header .login{
+    float: right;
+    margin: 5px ;
+    padding: 0;
+    background-color: #434B56;
+    color: #f1f1f1;
+    height: 80%;
+    width: 130px;
+    cursor: pointer;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.25s;
+    overflow: hidden;
+
+}
+.header .login p{
+    margin-top: 12%;
+}
+
+
+.header .login:hover{
+    background-color: deepskyblue;
+    width: 150px;
+    transition: 0.2s;
+    height: 100%;
+    margin: 0;
+    font-weight: bold;
+    border-radius: 3px;
+    overflow: auto;
+
+}
+.header .login:focus{
+    background-color: deepskyblue;
+    width: 150px;
+    transition: 0.2s;
+    height: 100%;
+    margin: 0;
+    font-weight: bold;
+    border-radius: 3px;
+    overflow: auto;
+
+}
+
+
+
+/* container */
+body{
+    margin: 0;
+    background-color: #f1f1f1 ;
+    font-family: Sans-serif, Arial, serif;
+}
+
+.container{
+    padding-top: 60px;
+
+}
+
+.main{
+    margin-left: 10%;
+    text-align: left;
+    padding: 0 10px 10px 10px;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+    transition: background 0.2s linear;
+    color: black;
+}
+p {
+    margin: 5px;
+}
+.mainInfo{
+    color: deepskyblue;
+    cursor: pointer;
+
+}
+/* nav */
+
+.nav{
+    float: left;
+    text-align: center;
+    background-color: #434B56;
+    color:#ECECEA ;
+    padding: 0;
+    width: 10%;
+    position: fixed;
+    transition: all 0.25s;
+}
+
+
+.ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 10%;
+    height: 100%;
+    position: fixed;
+    transition: all 0.25s;
+    background-color: #434B56;
+    overflow: auto;
+}
+
+.nav li a{
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    color: #ECECEA;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+
+
+}
+
+.nav li a:hover{
+    background-color: #f1f1f1;
+    color: #434B56;
+    transition: 0.25s;
+}
+.nav li a:focus{   /* jenom detail - ovladani pres tab */
+    background-color: #f1f1f1;
+    color: #434B56;
+    transition: 0.25s;
+}
+
+
+
+.nav .active{
+    background-color: deepskyblue;
+    font-size: 20px;
+}
+
+
+
+/* footer */
+.footer{
+    text-align: center;
+    background-color: #626F82;
+    color: #ECECEA;
+    clear: both;
+    padding: 5px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    height: 15px;
+    margin-top: 20px;
+    transition: all 0.25s;
+}
+
+/* day and night mode */
+
+
+
+.toggle{
+    display: none;
+}
+.checkbtn{
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 25px;
+    background: #f1f1f1;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+    left: 5px;
+    bottom: 30px;
+
+
+}
+
+.checkbtn:before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: #434B56;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.toggle:checked ~ .checkbtn:before{
+    transform: translateX(-50px);
+}
+.checkbtn:after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: #f1f1f1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+.toggle:checked ~ .checkbtn:after{
+    transform: translateX(0);
+}
+.toggle:checked ~ .checkbtn{
+    background: deepskyblue;
+
+}
+
+#moon{
+    color: #434B56;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 4px;
+}
+#sun{
+    color: #f1f1f1;
+    margin-top: 4px;
+    font-size: 15px;
+
+}
+
+
+.nightMain{
+    background-color: #081b26;
+    color: #f1f1f1;
+}
+.night{
+    background-color: #092c3e;
+}
+.nightNav{
+    background-color: #1e2d40;
+}
+/* mensi rozliseni */
+
+
+
+
+@media (max-width: 1024px){
+
+    .nav{
+        position: fixed;
+        top: 60px;
+        display: inline-block;
+        text-align: center;
+
+
+    }
+    .nav h3{
+        display: none;
+    }
+
+    .nav ul{
+        position: fixed;
+        height: 45px;
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s;
+    }
+
+    .nav li{
+        display: inline-block;
+        padding: 0;
+
+    }
+    .nav li a{
+        padding: 11px;
+        margin: 0 20px;
+        width: 100%;
+
+    }
+
+
+    .nav li a:hover{
+        background-color: #f1f1f1;
+        color: #434B56;
+        transition: 0.25s;
+    }
+
+    .nav .active{
+        background-color: deepskyblue;
+        font-size: 20px;
+
+    }
+    .main{
+        float: none;
+        margin-left: 0;
+        margin-top: 60px;
+        text-align: center;
+    }
+    .checkbtn {
+        top: 70px;
+        transition: all 0.5s;
+        width: 5%;
+
+    }
+
+}
+/**** DISKUZE ****/
+
+.createDiscuss{
+    display: block;
+
+}
+
+.createDiscuss a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #f1f1f1;
+    display: inline-block;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid #434B56 ;
+    width: 15%;
+    text-align: center;
+    background-color: #434B56;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.createDiscuss a:hover{
+    background-color: deepskyblue;
+    width: 16%;
+    transition: 0.2s;
+}
+.createDiscuss a:focus{
+    background-color: deepskyblue;
+    width: 16%;
+    transition: 0.2s;
+}
+
+
+
+.headlineLabel{
+    font-size: 20px;
+    font-weight: bold;
+}
+.headline{
+    margin: 10px 0;
+    padding: 10px;
+    width: 85%;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.headline:focus{
+    outline: none ;
+    border:1px solid deepskyblue;
+    box-shadow: 0 0 5px deepskyblue;
+    transition: 0.2s;
+
+}
+
+.questionLabel{
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.question{
+    margin: 10px 0;
+    padding: 5px;
+    text-align: left;
+    width: 90%;
+    height: 300px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.2s;
+
+
+}
+.question:focus{
+    outline: none ;
+    border:1px solid deepskyblue;
+    box-shadow: 0 0 5px deepskyblue;
+    transition: 0.2s;
+}
+
+.submitDiscuss{
+    border: 2px solid #434B56;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #434B56 ;
+    color: #f1f1f1;
+    border-radius: 10px;
+    width: 80px;
+    /*font-size: 15px;*/
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.submitDiscuss:hover{
+    transition: 0.2s;
+    background-color: #f1f1f1 ;
+    color: #434B56;
+    font-weight: bolder;
+}
+
+.submitDiscuss:focus{
+    transition: 0.2s;
+    background-color: #f1f1f1 ;
+    color: #434B56;
+    font-weight: bolder;
+}
+
+.error{
+    border:1px solid red;
+    box-shadow: 0 0 5px red;
+    transition: 0.2s;
+}
+
+.nightInput{
+    background-color: #434B56;
+    color: #f1f1f1;
+}
+
+
+.info{
+    text-align: left;
+}
+
+/*** web look ***/
+
+.webLook{
+    border: 2px solid #434B56;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #434B56 ;
+    color: #f1f1f1;
+    border-radius: 10px;
+    width:125px;
+    font-size: 15px;
+    font-weight: bolder;
+    transition: 0.1s;
+}
+.webLook:hover{
+    background-color: deepskyblue;
+}
+
+@media print {
+    .nav{
+        visibility: hidden;
+    }
+
+    .login{
+        visibility: hidden;
+    }
+    .zav{
+        color: black;
+    }
+    .header h1 a{
+        color: black;
+    }
+    .mainInfo{
+        color: black;
+    }
+    .main a{
+        visibility: hidden;
+    }
+    .submitDiscuss{
+        visibility: hidden;
+    }
+    .typeAnswer{
+        visibility: hidden;
+    }
+    .loggout{
+        visibility: hidden;
+    }
+    *{
+        color: black;
+    }
+    #h1{
+        color: black;
+    }
+}
+
+
+
+
+
+
+
+
+

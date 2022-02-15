@@ -1,0 +1,3 @@
+
+{"username":"Dindula","email":"truong.pavel@seznam.cz","password":"$2y$10$MBIm1xabMjo2yukUTrzz\/ehMKqECoYH2t0IUt7KvwBVlHQ1Bp95LW"}
+{"username":"test","email":"test@test.cz","password":"$2y$10$k8VhDvGjS52SFS82CbSENeU5lRrGZTbp\/b6l4vKE4cSRrMzb3W2Im"}

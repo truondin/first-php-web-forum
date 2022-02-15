@@ -1,0 +1,195 @@
+.errorPHP{
+    color: red;
+}
+
+
+.allDiskuze{
+    text-align: left;
+    margin-top: 15px;
+
+}
+
+.diskuze{
+    margin: 10px;
+    padding: 10px ;
+    border: 1px solid ;
+    width: 80%;
+    font-size: 23px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+
+.main p{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.open {
+    cursor: pointer;
+    color: deepskyblue;
+    font-size: 15px;
+
+}
+
+.typeAnswer{
+    font-size: 20px;
+    height: 100px;
+    width: 50%;
+}
+.typeAnswer:focus{
+    outline: none ;
+    border:1px solid deepskyblue;
+    box-shadow: 0 0 5px deepskyblue;
+    transition: 0.2s;
+}
+
+.nightAnswer{
+    background-color: #434B56;
+    color: #f1f1f1;
+}
+
+h3{
+    margin-bottom: 5px;
+}
+
+.topicAns{
+    margin: 5px 5px 10px 40px;
+    padding: 10px ;
+    border: 1px solid ;
+    width: 50%;
+    font-size: 17px;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.allAnswers{
+    text-align: left;
+}
+
+.paging{
+    text-align: center;
+    cursor: pointer;
+    margin: 2px;
+    padding: 7px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid #434B56;
+    border-radius: 8px;
+    background-color: #626F82;
+    color: #f1f1f1;
+    transition: 0.15s;
+    overflow: auto;
+}
+.paging-arrow{
+    text-align: center;
+    cursor: pointer;
+    margin: 2px;
+    padding: 7px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid #434B56;
+    border-radius: 8px;
+    background-color: #434B56;
+    color: #f1f1f1;
+    transition: 0.15s;
+    overflow: auto;
+}
+.paging-arrow:hover{
+    background-color: #f1f1f1;
+    color: #434B56 ;
+    transition: 0.15s;
+}
+.paging:hover{
+    background-color: #f1f1f1;
+    color: #434B56 ;
+    transition: 0.15s;
+}
+
+.page{
+    margin-top: 10px;
+    position: fixed;
+    left: 47%;
+    bottom: 40px;
+}
+
+#onPage{
+    text-align: center;
+    margin: 2px;
+    padding: 7px;
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid #434B56;
+    border-radius: 8px;
+    background-color: deepskyblue;
+    color: #f1f1f1;
+    transition: 0.15s;
+    overflow: auto;
+}
+
+.arrow{
+    margin: 2px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #434B56;
+    color: #f1f1f1;
+    transition: 0.15s;
+    overflow: auto;
+}
+.arrow:hover{
+    color: #434B56;
+    background-color: #f1f1f1;
+    border: 1px solid #434B56;
+}
+.arrowOff{
+    margin: 2px;
+    padding: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #434B56;
+    color: #f1f1f1;
+    overflow: auto;
+    visibility: hidden;
+}
+
+.deleteBtn{
+    margin-right: 5px;
+    padding: 6px;
+    font-size: 20px;
+    float: left;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    color: #f1f1f1 ;
+    transition: ease 0.2s;
+    background-color: #434B56;
+}
+
+.deleteBtn:hover{
+    background-color: red;
+
+
+}
+
+@media print {
+    .deleteBtn{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    .page{
+        position: center;
+        margin: 20px;
+        bottom: 15px;
+        left: 43%;
+        text-align: center;
+
+    }
+
+}
+

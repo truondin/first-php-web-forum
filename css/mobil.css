@@ -1,0 +1,124 @@
+.nav{
+    position: fixed;
+    top: 60px;
+    display: inline-block;
+    text-align: center;
+
+
+}
+.nav h3{
+    display: none;
+}
+
+.nav ul{
+    position: fixed;
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.nav li{
+    display: inline-block;
+    padding: 0;
+
+}
+.nav li a{
+    padding: 11px;
+    margin: 0 20px;
+    width: 100%;
+
+}
+
+
+.nav li a:hover{
+    background-color: #f1f1f1;
+    color: #434B56;
+    transition: 0.25s;
+}
+
+.nav .active{
+    background-color: deepskyblue;
+    font-size: 20px;
+
+}
+.main{
+    float: none;
+    margin-left: 0;
+    margin-top: 60px;
+    text-align: center;
+}
+.checkbtn {
+    top: 70px;
+    transition: all 0.5s;
+    width: 5%;
+
+}
+
+
+.toggle{
+    display: none;
+}
+.checkbtn{
+    position: fixed;
+    display: block;
+    width: 50px;
+    height: 25px;
+    background: #f1f1f1;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: ease-in 0.5s;
+    left: 5px;
+    bottom: 30px;
+
+
+}
+
+.checkbtn:before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: #434B56;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+.toggle:checked ~ .checkbtn:before{
+    transform: translateX(-50px);
+}
+.checkbtn:after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    background: #f1f1f1;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    transition: 0.5s;
+    transform: translateX(50px);
+}
+.toggle:checked ~ .checkbtn:after{
+    transform: translateX(0);
+}
+.toggle:checked ~ .checkbtn{
+    background: deepskyblue;
+
+}
+
+#moon{
+    color: #434B56;
+    margin-top: 5px;
+    font-size: 15px;
+    margin-left: 4px;
+}
+#sun{
+    color: #f1f1f1;
+    margin-top: 4px;
+    font-size: 15px;
+
+}

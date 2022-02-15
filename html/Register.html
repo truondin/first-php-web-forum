@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registrace</title>
+    <link href="css/log.css" rel="stylesheet">
+    <link href="fontsawesome/css/all.css" rel="stylesheet"> <!-- icons from Font Awesome -->
+</head>
+<body>
+<div class="header">
+
+    <a href="Login.html" class="nextLog">Přihlásit <i class="fas fa-sign-in-alt"></i></a>
+    <a href="HomePage.html" class="home"><i class="fas fa-2x fa-home"></i></a>
+
+</div>
+<div class="logBox">
+    <form class="box" action="#" method="post">
+        <h1>
+            <a href="HomePage.html"><span class="zav">&lt;</span>WEBOVKY<span class="zav">/&gt;</span></a>
+        </h1>
+        <h2><i class="fas fa-house-user"></i> ZAREGISTROVAT SE:</h2>
+        <label class="usernameTip">
+            <input type="text" placeholder="Přihlašovací jméno" name="username" class="input" id="username">
+            <span class="tip" >
+                Vložte vaše přihlašovací jméno.<br>
+            </span>
+        </label>
+
+        <label class="emailTip">
+            <input type="email" placeholder="Vložte email" name="email" class="input" id="email">
+            <span class="tip" >
+                např. example@gmail.com <br>
+            </span>
+        </label>
+
+        <label class="passwordTip">
+            <input type="password" placeholder="Heslo" name="psw" class="input" id="password">
+            <span class="tip" >
+                Heslo musí mít : <br>
+                minimálně 8 znaků <br>
+                alespoň 1 číslici <br>
+                alespoň 1 velké písmeno <br>
+                alespoň 1 malé písmeno <br>
+
+            </span>
+        </label>
+
+        <label class="confirmTip">
+            <input type="password" placeholder="Potvrdit heslo" name="confirmPsw" class="input" id="confirmPsw">
+            <span class="tip" >
+                Hesla musí být stejná.
+            </span>
+        </label>
+        <label><button type="submit" class="submit">Vytvořit účet</button></label>
+
+    </form>
+
+</div>
+
+<script src="../js/validRegister.js"></script>
+<script src="../js/day-nightRegister.js"></script>
+</body>
+
+</html>

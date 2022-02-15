@@ -1,0 +1,99 @@
+.userPage{
+    float: right;
+    margin: 0;
+    padding: 0;
+    background-color: deepskyblue;
+    color: #f1f1f1;
+    height: 100%;
+    width: 150px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.2s;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.userPage p{
+    margin-top: 12%;
+    font-weight: bold;
+    font-size: large;
+
+}
+
+.loggout{
+    float: right;
+    width: 125px;
+    height: 40px;
+    border-radius: 8px;
+    margin-top: 12px;
+    cursor: pointer;
+    background-color: #434B56;
+    color: #f1f1f1;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+
+}
+.loggout:hover {
+    background-color: #f1f1f1;
+    color: #434B56;
+    transition: linear 0.25s;
+}
+
+.loggout:focus{
+    background-color: #f1f1f1;
+    color: #434B56;
+    transition:linear 0.25s;
+}
+.delete{
+    float: right;
+}
+.delButton{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #626F82;
+    transition: ease 0.25s;
+
+}
+.delButton:hover{
+    background-color: red;
+    width: 90px;
+    font-size: 15px;
+    transition: ease 0.25s;
+}
+.delButton:focus{
+    background-color: red;
+    width: 125px;
+    font-size: 15px;
+    transition: ease 0.25s;
+}
+
+.editBtn{
+    position: relative;
+    left: 55px;
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: #626F82;
+    transition: ease 0.25s;
+}
+
+.editBtn:hover{
+    background-color: #f1f1f1;
+    color: #626F82;
+    width: 110px;
+    border: 2px solid #626F82;
+    transition: ease 0.25s;
+}
